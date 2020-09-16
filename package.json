@@ -1,0 +1,16 @@
+{
+  "name": "gndx-challenge-image-uploader",
+  "version": "1.0.0",
+  "description": "GNDX Challenge Image Uploader backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "author": "Carlos Vallejo",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
