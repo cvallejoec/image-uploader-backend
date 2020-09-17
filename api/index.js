@@ -17,12 +17,6 @@ app.use((req, res, next) => {
 app.use(express.static('public'));
 app.use('/api/uploader', uploader);
 
-// app.get('/', (req, res) => {
-//   res.status(200).json({
-//     primera: 'pagina',
-//   });
-// });
-
 app.listen(process.env.PORT || 3000, () => {
   console.log('All is ok!');
 });
