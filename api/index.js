@@ -16,6 +16,12 @@ app.use((req, res, next) => {
 
 app.use('/api/uploader', uploader);
 
+app.get('/', (req, res) => {
+  res.status(200).json({
+    primera: 'pagina',
+  });
+});
+
 app.listen(3000, () => {
   console.log('Server running on http://localhost:3000');
 });

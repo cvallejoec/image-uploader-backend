@@ -8,12 +8,19 @@ const Controller = require('./controller');
 router.get('/:id', get);
 router.post('/', upload.single('image'), toUpload);
 
+router.get('/test/test2', (req, res, next) => {
+  res.status(200).json({
+    hola: 'mundo',
+  });
+});
+
 // Internal Functions
 
 function toUpload(req, res, next) {
   console.log(req.file);
   res.status(200).json({
-    message: 'OK',
+    message: 'upload successful',
+    image: req.file.filename,
   });
 }
 
